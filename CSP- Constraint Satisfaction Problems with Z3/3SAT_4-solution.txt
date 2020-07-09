@@ -1,0 +1,49 @@
+sat
+(model 
+  (define-fun N () Bool
+    true)
+  (define-fun J () Bool
+    true)
+  (define-fun G () Bool
+    true)
+  (define-fun V () Bool
+    false)
+  (define-fun Q () Bool
+    false)
+  (define-fun U () Bool
+    false)
+  (define-fun P () Bool
+    false)
+  (define-fun R () Bool
+    false)
+  (define-fun D () Bool
+    true)
+  (define-fun I () Bool
+    false)
+  (define-fun T () Bool
+    true)
+  (define-fun M () Bool
+    false)
+  (define-fun E () Bool
+    false)
+  (define-fun L () Bool
+    false)
+  (define-fun S () Bool
+    false)
+  (define-fun O () Bool
+    false)
+  (define-fun W () Bool
+    false)
+  (define-fun B () Bool
+    false)
+  (define-fun C () Bool
+    false)
+  (define-fun K () Bool
+    false)
+  (define-fun A () Bool
+    false)
+  (define-fun H () Bool
+    true)
+  (define-fun Y () Bool
+    true)
+)

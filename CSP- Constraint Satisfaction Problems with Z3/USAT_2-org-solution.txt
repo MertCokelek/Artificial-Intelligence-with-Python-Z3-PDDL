@@ -1,0 +1,17 @@
+sat
+(model 
+  (define-fun C () Bool
+    false)
+  (define-fun E () Bool
+    true)
+  (define-fun G () Bool
+    true)
+  (define-fun D () Bool
+    true)
+  (define-fun B () Bool
+    false)
+  (define-fun F () Bool
+    true)
+  (define-fun A () Bool
+    true)
+)

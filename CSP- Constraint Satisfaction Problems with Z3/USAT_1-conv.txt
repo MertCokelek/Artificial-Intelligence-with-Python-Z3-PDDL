@@ -1,0 +1,79 @@
+(declare-const A Bool)
+(declare-const B Bool)
+(declare-const C Bool)
+(declare-const D Bool)
+(declare-const E Bool)
+(declare-const F Bool)
+(declare-const G Bool)
+(declare-const x1 Bool)
+(declare-const x2 Bool)
+(declare-const x3 Bool)
+(declare-const x4 Bool)
+(declare-const x5 Bool)
+(declare-const x6 Bool)
+(declare-const x7 Bool)
+(declare-const x8 Bool)
+(declare-const x9 Bool)
+(declare-const x10 Bool)
+(declare-const x11 Bool)
+(declare-const x12 Bool)
+(declare-const x13 Bool)
+(declare-const x14 Bool)
+(declare-const x15 Bool)
+(declare-const x16 Bool)
+(declare-const x17 Bool)
+(declare-const x18 Bool)
+
+(assert
+   (and 
+		(or A E F)
+		
+		(or A B x1)
+		(or (not x1) C x2)
+		(or (not x2) (not D) F)
+		
+		(or A B x3)
+		(or (not x3) (not C) x4)
+		(or (not x4) D F)
+		
+		(or A (not B) x5)
+		(or (not x5) C x6)
+		(or (not x6) D F)
+		
+		(or (not A) B x7)
+		(or (not x7) C x8)
+		(or (not x8) D (not F))
+		
+		(or (not A) B x9)
+		(or (not x9) E F)
+		
+		(or (not A) B x10)
+		(or (not x10) (not C) x11)
+		(or (not x11) (not D) (not F))
+		
+		
+		(or (not B) (not C) x12)
+		(or (not x12) (not D) x13)
+		(or (not x13) (not E) F)
+		
+		(or (not B) C x14)
+		(or (not x14) E F)
+	
+		(or (not A) (not B) x15)
+		(or (not x15) (not D) x16)
+		(or (not x16) (not E) F)
+		
+		(or (not A) (not B) x17)
+		(or (not x17) (not C) x18)
+		(or (not x18) D (not F))
+
+   )
+
+)
+
+(check-sat)
+(get-model)
+
+
+
+ 

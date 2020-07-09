@@ -1,0 +1,33 @@
+sat
+(model 
+  (define-fun A1 () Bool
+    false)
+  (define-fun A6 () Bool
+    true)
+  (define-fun B6 () Bool
+    false)
+  (define-fun B1 () Bool
+    false)
+  (define-fun A2 () Bool
+    false)
+  (define-fun B5 () Bool
+    false)
+  (define-fun C1 () Bool
+    false)
+  (define-fun A5 () Bool
+    true)
+  (define-fun C2 () Bool
+    true)
+  (define-fun B4 () Bool
+    false)
+  (define-fun A4 () Bool
+    false)
+  (define-fun B3 () Bool
+    false)
+  (define-fun B2 () Bool
+    false)
+  (define-fun C3 () Bool
+    false)
+  (define-fun A3 () Bool
+    false)
+)

@@ -1,0 +1,20 @@
+(declare-const A Bool)
+(declare-const B Bool)
+(declare-const C Bool)
+(declare-const D Bool)
+(declare-const E Bool)
+(declare-const F Bool)
+(declare-const G Bool)
+
+(assert
+
+	(or (and (iff (implies A (implies D F)) E) (and (or B C A E F G) (iff B (iff D (iff C A)))))(or (iff (implies A B) F)(and B E F G (iff D C)(implies A (iff B F)))))
+
+)
+
+(check-sat)
+(get-model)
+
+
+
+ 

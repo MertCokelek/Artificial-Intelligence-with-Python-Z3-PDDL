@@ -1,0 +1,21 @@
+sat
+(model 
+  (define-fun a () Bool
+    false)
+  (define-fun d () Bool
+    false)
+  (define-fun x3 () Bool
+    false)
+  (define-fun x2 () Bool
+    false)
+  (define-fun c () Bool
+    false)
+  (define-fun x1 () Bool
+    false)
+  (define-fun e () Bool
+    false)
+  (define-fun x4 () Bool
+    false)
+  (define-fun b () Bool
+    false)
+)

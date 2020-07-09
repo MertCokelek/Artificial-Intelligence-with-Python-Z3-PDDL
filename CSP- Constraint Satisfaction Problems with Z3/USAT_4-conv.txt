@@ -1,0 +1,27 @@
+(declare-const a Bool)
+(declare-const b Bool)
+(declare-const c Bool)
+(declare-const d Bool)
+(declare-const e Bool)
+(declare-const f Bool)
+(declare-const g Bool)
+(declare-const x1 Bool)
+
+
+(assert
+	(and
+		(or a b e)
+		(or a c e)
+		(or a d e)
+		(or a e g)
+		(or (not a) b (not e))
+		(or (not a) d (not e))
+		(or (not a) c x1)
+		(or (not x1) (not e) f)
+		(or (not a) (not e) g)	
+	)
+	
+)
+
+(check-sat)
+(get-model)

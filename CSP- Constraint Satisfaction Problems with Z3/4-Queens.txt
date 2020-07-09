@@ -1,0 +1,39 @@
+(declare-fun p (Int Int) Bool)
+
+(assert
+	(and 
+		;;Min. 1 row
+		(or (p 1 1)  (p 1 2)  (p 1 3) (p 1 4))
+		(or (p 2 1)  (p 2 2)  (p 2 3) (p 2 4))
+		(or (p 3 1)  (p 3 2)  (p 3 3) (p 3 4))
+		(or (p 4 1)  (p 4 2)  (p 4 3) (p 4 4))
+
+		;; Max. 1 row
+		(not (or(and (p 1 2) (p 1 1))(and (p 1 3) (p 1 1))(and (p 1 3) (p 1 2))(and (p 1 4) (p 1 1))(and (p 1 4) (p 1 2))(and (p 1 4) (p 1 3))))
+		(not (or(and (p 2 2) (p 2 1))(and (p 2 3) (p 2 1))(and (p 2 3) (p 2 2))(and (p 2 4) (p 2 1))(and (p 2 4) (p 2 2))(and (p 2 4) (p 2 3))))
+		(not (or(and (p 3 2) (p 3 1))(and (p 3 3) (p 3 1))(and (p 3 3) (p 3 2))(and (p 3 4) (p 3 1))(and (p 3 4) (p 3 2))(and (p 3 4) (p 3 3))))
+		(not (or(and (p 4 2) (p 4 1))(and (p 4 3) (p 4 1))(and (p 4 3) (p 4 2))(and (p 4 4) (p 4 1))(and (p 4 4) (p 4 2))(and (p 4 4) (p 4 3))))
+
+		(not (or(and (p 2 1) (p 1 1))(and (p 3 1) (p 1 1))(and (p 3 1) (p 2 1))(and (p 4 1) (p 1 1))(and (p 4 1) (p 2 1))(and (p 4 1) (p 3 1))))
+		(not (or(and (p 2 2) (p 1 2))(and (p 3 2) (p 1 2))(and (p 3 2) (p 2 2))(and (p 4 2) (p 1 2))(and (p 4 2) (p 2 2))(and (p 4 2) (p 3 2))))
+		(not (or(and (p 2 3) (p 1 3))(and (p 3 3) (p 1 3))(and (p 3 3) (p 2 3))(and (p 4 3) (p 1 3))(and (p 4 3) (p 2 3))(and (p 4 3) (p 3 3))))
+		(not (or(and (p 2 4) (p 1 4))(and (p 3 4) (p 1 4))(and (p 3 4) (p 2 4))(and (p 4 4) (p 1 4))(and (p 4 4) (p 2 4))(and (p 4 4) (p 3 4))))
+
+		
+		;;Right Diag.
+		(not (or (and (p 1 1) (p 2 2)) (and (p 1 1) (p 3 3)) (and (p 1 1) (p 4 4)) (and (p 2 2) (p 3 3)) (and (p 2 2) (p 4 4)) (and (p 3 3) (p 4 4))))
+		(not (or (and (p 1 2) (p 2 3)) (and (p 1 2) (p 3 4)) (and (p 2 3) (p 3 4))))
+		(not (or (and (p 1 3) (p 2 4))))
+		(not (or (and (p 2 1) (p 3 2)) (and (p 2 1) (p 4 3)) (and (p 3 2) (p 4 3))))
+		(not (or (and (p 3 1) (p 4 2))))
+
+		;Left Diag;
+		(not (or (and (p 4 1) (p 3 2)) (and (p 4 1) (p 2 3)) (and (p 4 1) (p 1 4)) (and (p 3 2) (p 2 3)) (and (p 3 2) (p 1 4)) (and (p 2 3) (p 1 4))))
+		(not (or (and (p 3 1) (p 2 2)) (and (p 3 1) (p 1 3)) (and (p 2 2) (p 1 3))))
+		(not (or (and (p 2 1) (p 1 2))))
+		(not (or (and (p 4 2) (p 3 3)) (and (p 4 2) (p 2 4)) (and (p 3 3) (p 2 4))))
+		(not (or (and (p 3 3) (p 2 4))))
+	)
+)
+(check-sat)
+(get-model)

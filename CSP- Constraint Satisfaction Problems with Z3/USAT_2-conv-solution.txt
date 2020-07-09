@@ -1,0 +1,53 @@
+sat
+(model 
+  (define-fun x7 () Bool
+    false)
+  (define-fun x11 () Bool
+    false)
+  (define-fun G () Bool
+    false)
+  (define-fun x9 () Bool
+    false)
+  (define-fun x13 () Bool
+    false)
+  (define-fun x16 () Bool
+    false)
+  (define-fun x17 () Bool
+    false)
+  (define-fun x8 () Bool
+    false)
+  (define-fun x14 () Bool
+    false)
+  (define-fun x2 () Bool
+    false)
+  (define-fun x1 () Bool
+    true)
+  (define-fun x6 () Bool
+    false)
+  (define-fun x10 () Bool
+    false)
+  (define-fun A () Bool
+    false)
+  (define-fun D () Bool
+    false)
+  (define-fun x18 () Bool
+    false)
+  (define-fun E () Bool
+    true)
+  (define-fun x3 () Bool
+    false)
+  (define-fun x12 () Bool
+    false)
+  (define-fun x15 () Bool
+    false)
+  (define-fun B () Bool
+    false)
+  (define-fun x5 () Bool
+    false)
+  (define-fun F () Bool
+    false)
+  (define-fun C () Bool
+    false)
+  (define-fun x4 () Bool
+    false)
+)
